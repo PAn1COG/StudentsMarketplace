@@ -1,0 +1,138 @@
+/* Diwan Sushrut Pramod 1002024368
+Gaddam Satyanarayana Reddy 1002024476
+Chouti, Sai Chandra 1002022843 */
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    color: #000;
+  }
+
+  .header{
+    min-height: 20px;
+    min-width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7),rgba(4, 9, 30, 0.7)),url(images/main.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  }
+  nav{
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7),rgba(4, 9, 30, 0.7)),url(images/main.jpg);
+  }
+
+  .row {
+    display: flex;
+  }
+
+  .student-profile .card {
+    border-radius: 10px;
+  }
+
+  .student-profile .card .card-header .profile_img {
+    width: 150px !important;
+    height: 150px !important;
+    object-fit: cover;
+    margin: 10px auto;
+    border: 10px solid #ccc;
+    border-radius: 50%;
+  }
+
+  .student-profile .card h3 {
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .student-profile .card p {
+    font-size: 16px;
+    color: #000;
+  }
+
+  .student-profile .table th,
+  .student-profile .table td {
+    font-size: 14px;
+    padding: 5px 10px;
+    color: #000;
+  }
+
+  .small-container{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .col-3{
+    flex-basis: 33%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+  }
+
+  .col-3 img{
+    width: 80%;
+  }
+
+  .title{
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: #555;
+  }
+
+  .title::after{
+    content: '';
+    background: #ff523b;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  h4{
+    color: #555;
+    font-weight: normal;
+  }
+
+  .col-3 p{
+    font-size: 14px;
+
+  }
+
+  .rating .fa{
+    color: #ff523b;
+  }
+
+  .col-3:hover{
+    transform: translateY(-5px);
+  }
+
+  .hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    border: 1px solid black;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transperent;
+    position: relative;
+    cursor: pointer;
+  }
+  .hero-btn:hover{
+    border: 1px solid rgb(18, 17, 17);
+    transition: 1s;
+  }
+
+  /* .card .shadow-sm {
+    display: flex !important;
+  } */
+
+  @media(max-width:480px){
+    .row {
+        display: block;
+      }
+  }
